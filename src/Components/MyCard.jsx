@@ -15,7 +15,7 @@ class MyCard extends Component{
                 (item, idx) => (
                     // debugger;
                     <Col key={idx} className='MyCardCol' >
-                        <Card style={{height:'450px'}}>
+                        <Card style={{height:'500px'}}>
                             <Card.Img variant="top" src={item.logo}/>
                             <Card.Body>
                                 <Card.Title>
