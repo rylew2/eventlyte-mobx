@@ -17,13 +17,15 @@ class App extends Component {
 
     componentDidMount() {
         //
-        fetch(this.baseApiUrl + "/events")
+        let limit = 100;
+        fetch(this.baseApiUrl + "/events/?limit=" + limit)
           .then(resp => resp.json())
           .then(data => {
               let arr = [];
               for(let d of data.results) {
                   
                   let obj = {
+                      eventId: d.id,
                       event: d.name,
                       category: d.category === null? 'N/A':  d.category.name  ,
                       organizer: d.organizer ===null? 'N/A': d.organizer.name  ,

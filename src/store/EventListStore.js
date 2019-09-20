@@ -26,7 +26,7 @@ class EventListStore {
 
 
     @action searchEvents = searchVal => {
-        debugger;
+        // debugger;
         let f = new Fuse(this.events, this.searchOptions)
         this.searchedEvents = f.search(searchVal);
     }
