@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card, Row, Col, Container} from 'react-bootstrap';
+import {Card, Row, Col} from 'react-bootstrap';
 import {EventModal} from './EventModal';
 
 const pStyle = {fontSize:'12px'}
@@ -42,9 +42,7 @@ class MyCard extends Component{
                 )
             );
             return (
-                <Container >
-                    {rows}
-                </Container>
+                rows
             );
 
 
