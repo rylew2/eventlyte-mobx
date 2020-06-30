@@ -3,21 +3,16 @@
   "version": "1.0.0",
   "description": "Boilerplate for MobX + React project with JSX, ES6 and decorator compilation",
   "scripts": {
-    "start": "webpack-dev-server --hot --open",
-    "build": "webpack",
-    "lint": "eslint src"
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/mobxjs/mobx-react-boilerplate.git"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "boilerplate",
-    "mobx",
-    "starter-kit"
-  ],
+  "keywords": ["react", "reactjs", "boilerplate", "mobx", "starter-kit"],
   "author": "Michel Weststrate <mweststrate@gmail.com> (http://github.com/mweststrate)",
   "license": "MIT",
   "bugs": {
@@ -25,15 +20,11 @@
   },
   "homepage": "http://mobxjs.github.com/mobx",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-transform-decorators-legacy": "^1.3.5",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-1": "^6.24.1",
-    "webpack": "^4.16.1",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "@types/jest": "^22.1.3",
+    "@types/node": "^9.4.6",
+    "@types/react": "16.0.38",
+    "@types/react-dom": "16.0.4",
+    "typescript": "^2.7.2"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -46,6 +37,7 @@
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.4.1",
     "react-spinners": "^0.6.1",
-    "style-loader": "^1.0.0"
+    "style-loader": "^1.0.0",
+    "react-scripts-ts": "2.13.0"
   }
 }
